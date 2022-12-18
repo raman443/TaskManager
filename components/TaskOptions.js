@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,TouchableOpacity } from 'react-native';
+import {Text, View,TouchableOpacity } from 'react-native';
 import { styles } from './styles/TaskStyles';
 const TaskOptions = ({navigation,route}) =>{
     const {task} = route.params;

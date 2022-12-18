@@ -7,7 +7,6 @@ import {Text,
 import { StatusBar } from 'expo-status-bar';
 import {styles} from './styles/TaskStyles';
 import Item from './common/Item'
-import { useSelector} from 'react-redux'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const AddTask = props =>{

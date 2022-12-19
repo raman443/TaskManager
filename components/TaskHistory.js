@@ -36,8 +36,10 @@ const TaskHistory = props =>{
             diff = d.getDate() - day + (day == 0 ? -6:1); // adjust when day is sunday
         return new Date(d.setDate(diff));
     }
+    const monday = getMonday(new Date()).setUTCHours(0,0,0,0);
     taskDetailsList.map(item=>{
-        if(new Date(item.date)>=getMonday(new Date())){
+
+        if(new Date(item.date)>=monday){
             thisWeekList.push(item);
         }else{
             lastWeekList.push(item);
